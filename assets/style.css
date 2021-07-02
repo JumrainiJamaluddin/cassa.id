@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    background-color: #ffa7b6;
+    justify-content: space-around;
+    height: 12vh;
+    color: #664c51;
+    align-items: center;
+}
+
+nav .logo {
+    font-family: 'Akaya Kanadaka', cursive;
+    letter-spacing: 3px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 60%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: #664c51;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li form input {
+    padding: 10px 20px;
+    border: none;
+}
+
+nav ul li form input.search {
+    border-radius: 50px;
+}
+
+nav ul li form input#button-nav {
+    border-radius: 10px;
+    background-color: #f2bcd6
+}
+
+nav ul li form input#button-nav:hover {
+    font-size: 15px;
+    color: #c77fa1;
+}
+
+/* humberger menu */
+.menu-toggel {
+    display: none;
+    flex-direction: column;
+    height: 1.5rem;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.menu-toggel span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #664c51;
+    border-radius: 3px;
+}
+
+.efect1 {
+    transform: rotate(45deg);
+    position: relative;
+    top: 40px;
+    transition: all 0.5s;
+}
+
+.efect2 {
+    width: 10px;
+    position: relative;
+    transform: rotate(-45deg);
+    transition: all 0.5s;
+}
+
+.efect3 {
+    transform: rotate(45deg);
+    top: -9px;
+    position: relative;
+    transition: all 0.5s;
+}
+
+/* Jumbotron */
+.jumbotron {
+    height: 60vh;
+    background-color: #ffdae0;
+    font-size: 20px;
+    padding: 7rem;
+    text-align: center;
+}
+
+.jumbotron h1 {
+
+    color: #191314;
+    font-size: 70px;
+    padding: 1rem;
+}
+
+.jumbotron p {
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    color: #fd647e;
+}
+
+.jumbotron h6 {
+    color: #ff748c;
+    margin-bottom: 3rem;
+    font-size: 25px;
+}
+
+.jumbotron input.Login {
+    margin: 8px;
+    padding: 1rem 4rem;
+    color: #191314;
+    background-color: #f2bcd6;
+    border: none;
+    border-radius: 15px;
+}
+
+.jumbotron input.Register {
+    padding: 1rem 4rem;
+    color: #191314;
+    background-color: #ffc0cb;
+    border: none;
+    border-radius: 15px;
+}
+
+.jumbotron input.Login:hover,
+.jumbotron input.Register:hover {
+    font-size: 10px;
+    color: #cf8a95;
+}
+
+
+/* Conten */
+#content {
+    margin: none;
+}
+
+#content h3 {
+    font-size: 50px;
+    margin: 1.5rem 0;
+    text-align: center;
+    text-shadow: 4px 2px #EFE2E8;
+    opacity: 80%;
+}
+
+article {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Krona One', sans-serif;
+    margin-bottom: 8%;
+
+    cursor: pointer;
+}
+
+
+
+.card {
+    box-shadow: 8px 8px 5px 0 #FFF5F7;
+    border-radius: 15px;
+    width: 50%;
+    height: 50%;
+    margin: 0 3%;
+
+}
+
+aside img {
+    width: 100%;
+}
+
+aside h4 {
+    padding: 1rem 0;
+    font-size: 70%;
+    text-align: center;
+    color: #fd647e;
+
+}
+
+aside ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+aside ul li {
+    list-style: none;
+    font-size: 60%;
+}
+
+svg {
+    margin-top: -6rem;
+}
+
+.fav {
+    color: black;
+}
+
+/* aboutus */
+#aboutus {
+    background-color: #f4ecec;
+    margin-top: -0.3rem;
+    font-family: 'Akaya Kanadaka', cursive;
+}
+
+#aboutus h6 {
+    font-size: 5rem;
+    text-align: center;
+    padding: 3rem;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+}
+
+.about h4 {
+    font-size: 2rem;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.pemilik {
+    width: 60%;
+
+}
+
+.pemilik img {
+    width: 90%;
+    align-items: center;
+    border-radius: 20%;
+
+}
+
+.text {
+    width: 30%;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* footer */
+
+div#footer {
+    padding: 2rem;
+    font-size: x-large;
+    font-style: oblique;
+    letter-spacing: 2px;
+    text-align: center;
+    background-image: linear-gradient(to right, #f4ecec, #ffa7b6);
+}
+
+
+
+
+
+/* Responsive BreakOut*/
+
+/* ukuran table */
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 90%;
+    }
+
+
+    .menu-toggel {
+        display: none;
+    }
+
+    .jumbotron h1 {
+
+        color: #191314;
+        font-size: 40px;
+    }
+
+    .jumbotron p {
+        margin-bottom: 1rem;
+        margin-top: 4rem;
+        font-size: 1.2rem;
+    }
+
+    .jumbotron h6 {
+        color: #ff748c;
+        margin-bottom: 2rem;
+        font-size: 1rem;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text {
+        width: 90%;
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+
+/* ukuran Mobile */
+@media screen and (max-width: 576px) {
+    .menu-toggel {
+        display: flex;
+    }
+
+    nav ul {
+        position: absolute;
+        right: 0;
+        width: 100%;
+        top: 0;
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ffa7b6;
+        ;
+
+        transform: translate(100%);
+        transition: all 1s;
+
+    }
+
+    nav ul.slide {
+        transform: translate(0);
+    }
+
+    .jumbotron h1 {
+        font-size: 40px;
+        padding: 0;
+        margin-top: -3rem;
+    }
+
+    .jumbotron p {
+        margin-top: 2rem;
+        font-size: 0.8rem;
+    }
+
+    .jumbotron h6 {
+        margin-bottom: 1rem;
+        font-size: 0.8rem;
+    }
+
+    /* #content */
+    #content {
+        background-image: linear-gradient(#ffdae0, #fff3f5, #fff8f9);
+    }
+
+    #content h3 {
+        margin: 0;
+        margin-bottom: 3rem;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 1rem;
+        background-color: white;
+        box-shadow: none;
+    }
+
+
+    aside h4 {
+        font-size: 100%;
+
+    }
+
+    aside ul li {
+        font-size: 50%;
+    }
+
+    svg {
+        display: none;
+    }
+
+    /* abaout Us */
+    #aboutus h6 {
+        margin-top: -2rem;
+    }
+
+    #aboutus h6 {
+        font-size: 40px;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text {
+        width: 90%;
+        text-align: center;
+        font-size: 1rem;
+    }
+}

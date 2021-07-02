@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cassa.ID</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h4>CASSA.ID</h4>
+                <h6>Baju OOTD Muslimah</h6>
+            </div>
+            
+            <ul class="pilihan">
+                <li ><a href=""> Home</a></li>
+                <li> <a href="">Rok</a> </li>
+                <li> <a href="">Tas</a> </li>
+                <li><a href="">Sepatu</a></li>
+                <li><a href="">Jilbab</a></li>
+                <li>
+                    <form>
+                        <input class="search" type="text" placeholder="cari.." required>
+                        <input id="button-nav" type="button"  value="cari">
+                    </form>
+                </li>
+            </ul>
+
+            <class class="menu-toggel">
+                <span></span>
+                <span></span>
+                <span></span>
+            </class>
+        </nav>
+        <div class="jumbotron">
+            <h1>Cassa.ID</h1>
+            <p>Temukan Fasion Muslimah Ter-OOTD terbaik 
+             <h6>Jadikan Hitsmu dengan pakaian syar'i</h6>
+
+            <input class="Login" type="button" value="login">
+            <input class="Register" type="button" value="register">
+        </div>
+        
+    </header>
+    <main>
+        <div id="content">
+            
+            <h3>Hal yang Kamu Cari?</h3>
+            <article class="one">
+                <aside id="baju-Tunik" class="card satu">
+                    <h4>Tunik</h4>
+                    <img src="assets/gambar/main-card/tunik.jpg" alt="Tunik-nihonjo">
+                    <ul>
+                        <li>55.000</li>
+                        <li class="fav" id="product1" onclick="changeColor(this)">favorit</li>
+                        <li class="beli" id="chekout1">beli</li>
+                    </ul>
+                </aside>
+
+                <aside id="rok-plisket" class="card dua">
+                    <h4>Rok-Plisket</h4>
+                    <img src="assets/gambar/main-card/rok-plisket.jpg" alt="Rok-Plisket">
+                    <ul>
+                        <li>65.000</li>
+                        <li id="product2" onclick="changeColor(this)">favorit</li>
+                        <li>beli</li>
+                    </ul>
+                </aside>
+
+                <aside id="tas-totebag" class="card tiga">
+                    <h4>Tas Totebag</h4>
+                    <img src="assets/gambar/main-card/Tas-Totebag.jpg" alt="Rok-Plisket">
+                    <ul>
+                        <li>30.000</li>
+                        <li id="product3" onclick="changeColor(this)">favorit</li>
+                        <li>beli</li>
+                    </ul>
+                </aside>
+            </article>
+            <article class="one">
+                <aside id="tas-totebag" class="card empat">
+                    <h4>kemeja</h4>
+                    <img src="assets/gambar/main-card/Tas-Totebag.jpg" alt="Rok-Plisket">
+                    <ul>
+                        <li>85.000</li>
+                        <li id="product4" onclick="changeColor(this)">favorit</li>
+                        <li>beli</li>
+                    </ul>
+                </aside>
+
+                <aside id="tas-totebag" class="card lima">
+                    <h4>Tas Sling Bag</h4>
+                    <img src="assets/gambar/main-card/Tas-Totebag.jpg" alt="Rok-Plisket">
+                    <ul>
+                        <li>70.000</li>
+                        <li id="product5" onclick="changeColor(this)">favorit</li>
+                        <li>beli</li>
+                    </ul>
+                </aside>
+            </article>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#EFE2E8" fill-opacity="0.7" d="M0,64L60,106.7C120,149,240,235,360,245.3C480,256,600,192,720,170.7C840,149,960,171,1080,176C1200,181,1320,171,1380,165.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+           
+        </div>
+    </main>
+    <div id="aboutus">
+        <h6>Pendiri Cassa.Id</h6>
+        <div class="about">
+            <div class="pemilik"> 
+                    <img src="assets/gambar/Profil-fonder/Raini.jpeg" alt="FOUNDER">
+                    <h4>Sakura </h4>
+            </div>
+            <div class="text">
+                <p>hay... 
+                    <span>selamat datang di Cassa.Id, platform digital untuk para muslimah cantik diluaran sana yang ingin tampil staylist tapi tetap syar'i</span>
+                </p>
+                <p>dengan cassa.Id kamu bisa memilih pakaian sesuai dengan seleramu, kamu juga bisa melakukan konsultasi dengan teman-teman yang ahli dalam bidang fasion untuk bertukar informasi stylish yang cocok kamu pakai.</p>
+            </div>
+        </div>
+    </div> 
+
+
+    <div id="footer">
+        @Dicoding 2021
+    </div>
+<script src="assets/maincassa.js"></script>
+</body>
+</html>
