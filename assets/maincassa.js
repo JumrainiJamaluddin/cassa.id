@@ -4,8 +4,10 @@ const span = document.querySelectorAll('span');
 const nav = document.querySelector('nav ul');
 const contentH3 = document.querySelector('#content h3');
 
-
+// gantiText = true;
 let products = {}
+
+
 
 menuToggel.onclick = () => {
     span[0].classList.toggle('efect1');
@@ -31,7 +33,3 @@ function changeColor(e){
         products[e.id] = true
     }
 }
-
-
-
-
